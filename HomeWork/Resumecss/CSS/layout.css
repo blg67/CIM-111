@@ -3,6 +3,7 @@
   body{
     background-color: Aquamarine;
   }
+
   /* id or # use once */
   #centerText{
     text-align: center;
@@ -17,12 +18,13 @@
   }
 
   #italic{
-    text-emphasis: italic;
+    font-style: italic;
 
   }
 
   #shadow{
-    box-shadow: -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    /* box-shadow: -webkit-box-shadow: 3px 3px 5px 6px #ccc; */
+    box-shadow: 5px 10px #888888;
 
     }
 
@@ -41,10 +43,12 @@
 
   }
   .shadow {
-  text-shadow: Aquamarine;
+    text-shadow: 2px 2px Aquamarine;
+
 }
 
 
   table{
     background-color: white;
+
   }
