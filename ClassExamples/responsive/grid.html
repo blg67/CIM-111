@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grid example</title>
+
+    <style>
+
+      header{
+        width: 960px;
+        height: 100px;
+        background-color: orange;
+        margin: 0 auto;
+      }
+
+      main{
+        width: 960px;
+        height: auto;
+        background-color: papayawhip;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      footer{
+        width: 960px;
+        height: 100px;
+        background-color: orange;
+        margin: 0 auto;
+      }
+
+      #grid1{
+        width: 900px;
+        height: auto;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 300px;
+        grid-template-columns: 280px 300px 280px;
+        /* first, second and third column */
+        grid-column-gap: 20px;
+      }
+
+      #grid1image{
+        width: 300px;
+        height: 250px;
+      }
+
+      #grid2{
+        width: 900px;
+        height: auto;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 300px;
+        grid-template-columns: 280px 300px 280px;
+        /* first, second and third column */
+        grid-column-gap: 20px;
+      }
+
+      #grid2image{
+        width: 300px;
+        height: 250px;
+      }
+
+      #grid3{
+        width: 590px;
+        height: auto;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 1fr; /* an fr size is determind by the size of the largest element*/
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+      }
+
+      #grid3 section img{
+        width: 300px;
+        height: 250px;
+      }
+
+      #grid4{
+        width:900px;
+        height: auto;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows:1fr;
+        grid-template-columns: 1fr 2fr; /* creates 2 columns where the second column expand to 2 frames*/
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+
+    </header>
+
+    <main>
+      <section id="grid1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <img id="grid1image" src="https://farm3.staticflickr.com/2764/4360498279_bec6337dcc.jpg" alt="Creamsicle">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      </section>
+
+      <section id="grid2">
+
+        <section>
+          <h1>Creamsicle flavor</h1>
+          <ul>
+            <li>Orange</li>
+            <li>Pineapple</li>
+            <li>Strawberry</li>
+          </ul>
+        </section>
+
+        <section>
+          <img id="grid1image" src="https://farm3.staticflickr.com/2764/4360498279_bec6337dcc.jpg" alt="Creamsicle">
+          <p>This picture is of a creamsicle</p>
+        </section>
+
+        <section>
+          <h1>About creamsicle</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+      </section>
+
+      <section id="grid3">
+
+        <section>
+          <img src="https://farm3.staticflickr.com/2764/4360498279_bec6337dcc.jpg" alt="creamsicle">
+          <p>More creamsicle</p>
+        </section>
+
+        <section>
+          <img src="https://farm3.staticflickr.com/2764/4360498279_bec6337dcc.jpg" alt="creamsicle">
+          <p>More creamsicle</p>
+        </section>
+      </section>
+
+      <section id="grid4">
+        <h1>About creamsicles</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+
+  </body>
+</html>
