@@ -1,0 +1,153 @@
+
+header{
+  background-color: ivory;
+  width: 850px;
+  height: auto;
+  padding: 20px;
+  margin: 0 auto;
+
+}
+header p{
+  font-size: 15px;
+  text-align: center;
+
+}
+
+header h1{
+  text-align: center;
+  font-family: cursive;
+  margin: -10px;
+}
+
+main{
+  background-color: lightblue;
+  width: 850px;
+  height: auto;
+  padding: 20px;
+  margin: 0 auto;
+
+}
+
+footer{
+  background-color: ivory;
+  width: 850px;
+  height: auto;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+
+nav{
+  background-color: lightblue;
+  width: 720px;
+  margin: 0 auto;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  /* the "display" puts the lists next to eachother */
+  margin-right: 20px;
+  padding: 10px;
+
+}
+
+nav ul li:hover{
+  background-color: white;
+
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+#grid1{
+  width: 740px;
+  height: auto;
+  margin: 20px auto;
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 240px 400px;
+  column-gap: 100px;
+}
+#grid1 img{
+  width: 400px;
+  margin-right: -10px;
+}
+
+#grid1 p{
+  font-size: 15px;
+  text-align: left;
+}
+
+#grid2{
+  width: 740px;
+  height: auto;
+  margin: 20px auto;
+  display: grid;
+  grid-template-rows: 430px;
+  grid-template-columns: 240px 400px;
+  column-gap: 100px;
+
+}
+
+#grid2 img{
+  width: 400px;
+}
+
+#grid2 p{
+  font-size: 14px;
+  text-align: left;
+}
+
+
+#grid3{
+  width: 740px;
+  height: auto;
+  margin: 20px auto;
+  display: grid;
+  grid-template-rows: 300px 300px;
+  grid-template-columns: 250px 250px;
+  column-gap: 100px;
+
+}
+
+#grid3 img{
+  width: 400px;
+  padding-bottom: 10px;
+}
+
+#grid3 p{
+  font-size: 15px;
+  text-align: left;
+}
+
+#grid4{
+  width: 740px;
+  height: auto;
+  margin: 20px auto;
+  display: grid;
+  grid-template-rows: 250px 450px;
+  grid-template-columns: 400px 400px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+
+}
+
+#grid4 img{
+  width: 340px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+#grid4 p{
+  font-size: 15px;
+}
+
+.centerText{
+  text-align: center;
+}
