@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Interaction example</title>
+
+    <style media="screen">
+      img{
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="colorChange">Click here to change background color</h1>
+    <h1 id="colorChange2">Click here to change background</h1>
+
+    <ul>
+      <li id="info1" class="info">info 1</li>
+      <li id="info2" class="info">info 2</li>
+      <li id="info3" class="info">info 3</li>
+    </ul>
+
+    <p id="addInfo"></p>
+
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#colorChange").click(function(){
+          $("body").css("background-color", "blue")
+                  }); //end of colorChange.click
+
+        $("#colorChange2").click(function(){
+            $("body").css("background-color", "orange")
+                  }); // end of color change 2
+
+
+        $("#info1").mouseenter(function(){
+          $("#addInfo").html("Hello all");
+                  }); // end of info 1 mounse enter
+
+
+        $("#info2").mouseenter(function(){
+          $("#addInfo").html("<strong>this is bold </strong>");
+        });
+
+        $("#info3").mouseenter(function(){
+          $("#addInfo").html("<img src='https://live.staticflickr.com/2396/2252957223_5f43879b96_b.jpg' alt='img1'>");
+
+        });
+
+        $("info1").mouseleave(function(){
+          $("#addInfo").html("");
+
+        });
+        $(".info").mouseleave(function(){
+          $("addInfo").html("");
+        });
+
+      });
+    </script>
+
+  </body>
+</html>
