@@ -14,15 +14,16 @@
       }
 
       nav{
-        width: 400px;
+        width: 700px;
         margin: 0 auto;
       }
 
       nav ul li{
         list-style: none;
-        display: inline-block;
+        display:inline-block;
         margin-right: 15px;
         padding: 10px;
+        background-color: grey;
       }
 
       nav ul li a{
@@ -62,7 +63,7 @@
   height: auto;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 510px 510px;
+  grid-template-rows: 530px 530px;
   grid-template-columns: 1fr 1fr;
   column-gap: 50px;
 }
@@ -77,11 +78,23 @@
   height: auto;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 510px 510px;
+  grid-template-rows: 250px 250px;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 50px;
 }
 
+#grid4{
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+}
+#grid4 img{
+  width: 100px;
+}
 
     </style>
 
@@ -92,12 +105,12 @@
 
 <h1>Baking with a Buzz</h1>
 
-    <nav>
+    <nav class="navbar">
       <ul>
-        <li><a href="#aboutme">How I started</a></li>
-        <li><a href="#cupcakes">Boozie cupcakes</a></li>
-        <li><a href="#frosting">Frosting options</a></li>
-        <li><a href="#designing">Designing options</a></li>
+        <li><a href="#aboutme"><strong>How I started</strong></a></li>
+        <li><a href="#cupcakes"><strong>Boozie cupcakes</strong></a></li>
+        <li><a href="#frosting"><strong>Frosting options</strong></a></li>
+        <li><a href="#designing"><strong>Designing</strong></a></li>
       </ul>
 
     </nav>
@@ -117,32 +130,33 @@
   </section>
 
   <section>
-    <h4>Margarita cupcakes</h3>
-    <p>Ingredients</p>
+    <h4 >Margarita cupcakes</h3>
+        <p id="marg">Ingredients</p>
 
-    <ul>
-      <li>All purpose flour: 1c + 1/2c</li>
-      <li>Baking powder: 1tsp + 1/2tsp</li>
-      <li>Salt: 1/4tsp</li>
-      <li>Stick of butter: 1/2c</li>
-      <li>Granulated sugar: 1c</li>
-      <li>Egg: 2</li>
-      <li>Lime: 1 whole + 1/2</li>
-      <li>Tequila: 1c</li>
-      <li>Vanilla extract: 2tsp</li>
-      <li>Buttermilk: 1/2c</li>
-    </ul>
+        <ul id="margToggle">
+          <li>All purpose flour: 1c + 1/2c</li>
+          <li>Baking powder: 1tsp + 1/2tsp</li>
+          <li>Salt: 1/4tsp</li>
+          <li>Stick of butter: 1/2c</li>
+          <li>Granulated sugar: 1c</li>
+          <li>Egg: 2</li>
+          <li>Lime: 1 whole + 1/2</li>
+          <li>Tequila: 1c</li>
+          <li>Vanilla extract: 2tsp</li>
+          <li>Buttermilk: 1/2c</li>
+        </ul>
 
-    <p>Directions</p>
-    <ol>
-      <li>In a large bowl place; flour, baking powder, and salt</li>
-      <li>In mixer beat butter and sugar until combined and fluffy</li>
-      <li>Add eggs one at a time in the mixer</li>
-      <li>Add the Zest of one whole lime and lime juice of a lime and a half in the mixer</li>
-      <li>Add vanilla and tequila to the mixer</li>
-      <li>Add dry ingredients alternating with buttermilk in the mixer</li>
-      <li>Bake</li>
-    </ol>
+        <p>Directions</p>
+        <ol>
+          <li>In a large bowl place; flour, baking powder, and salt</li>
+          <li>In mixer beat butter and sugar until combined and fluffy</li>
+          <li>Add eggs one at a time in the mixer</li>
+          <li>Add the Zest of one whole lime and lime juice of a lime and a half in the mixer</li>
+          <li>Add vanilla and tequila to the mixer</li>
+          <li>Add dry ingredients alternating with buttermilk in the mixer</li>
+          <li>Bake</li>
+        </ol>
+
     <br>
 
 <h4>Baileys cupcakes</h4>
@@ -179,8 +193,8 @@
   </section>
 <section>
   <h4>American buttercream</h4>
-  <p>Ingredients</p>
-  <ul>
+  <p id="section1Hide">Ingredients</p>
+  <ul id="section1">
     <li>Confectioner sugar: 32oz</li>
     <li>Stick of butter: 4 sticks</li>
     <li>Vanilla extract: 2tbsp</li>
@@ -216,13 +230,78 @@
     <li>PLace in a piping bag</li>
   </ol>
 </section>
+</section>
+
+<section id="grid4">
+  <section>
+  <h1 id="designing">Designing your cupcakes</h1>
+</section>
+
+<section>
+  <p>Depending what your customers order you'll have to design your cupcakes in the way they want it or if they gave you the option to use your imagination which will happen. In my experince I've been given the option the use my imagination and or i had direct orders in what they want the cupcakes to look like. What I've made in the past had been: snow white cupcakes, a big cupcake cake, halloween cupcakes, thanksgiving cupcakes, and more. I enjoy decorating cupcakes because they are so small compared to cakes you can put one or two things on them and it just makes it look complete. Cupcakes are easy to make and to decorate, but most of all fun!</p>
+</section>
 
 </section>
 
+<section id="myGallery">
+<img src="images/apple.png" alt="">
+<img src="images/BB.png" alt="">
+<img src="images/Bow.png" alt="">
+<img src="images/fire.png" alt="">
+<img src="images/Halloween.png" alt="">
+<img src="images/MM.png" alt="">
+<img src="images/SW.png" alt="">
+<img src="images/TG.png" alt="">
+</section>
+
+
+</section>
 
   </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+      $("#margToggle").hide();
 
 
+      $("#section1Show").click(function(){
+        $("#section1").show();
+      });
+
+      $("#section1Hide").click(function(){
+        $("#section1").hide();
+      });
+
+      $("#marg").click(function(){
+        $("#margToggle").slideToggle();
+      });
+
+    });
+
+    </script>
+
+
+<script src="js/stickUp.min.js"></script>
+<script type="text/javascript">
+             //initiating jQuery
+             jQuery(function($) {
+               $(document).ready( function() {
+                 //enabling stickUp on the '.navbar-wrapper' class
+                 $('.navbar').stickUp();
+               });
+             });
+
+           </script>
+
+           <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+           <script type="text/javascript" src="BG/jquery.balanced-gallery.min.js"></script>
+
+           <script>
+           $(window).load(function() {
+             $('#myGallery').BalancedGallery({autoResize: true,idealHeight: 200, idealWidth: 300});
+           });
+         </script>
 
   </body>
 </html>
