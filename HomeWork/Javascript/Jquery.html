@@ -262,6 +262,10 @@
 
   </main>
   <script src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="BG/jquery.balanced-gallery.min.js"></script>
+  <script src="js/stickUp.min.js"></script>
+
+
   <script type="text/javascript">
     $(document).ready(function(){
 
@@ -298,30 +302,17 @@
         $("#creamToggle").slideToggle();
       });
 
+      $('#myGallery').BalancedGallery({autoResize: true,idealHeight: 200, idealWidth: 300, orientation: 'horizontal', padding: 5});
+
+      $('.navbar').stickUp();
+
     });
 
     </script>
 
 
-<script src="js/stickUp.min.js"></script>
-<script type="text/javascript">
-             //initiating jQuery
-             jQuery(function($) {
-               $(document).ready( function() {
-                 //enabling stickUp on the '.navbar-wrapper' class
-                 $('.navbar').stickUp();
-               });
-             });
 
-           </script>
 
-           <script type="text/javascript" src="BG/jquery.balanced-gallery.min.js"></script>
-
-           <script>
-           $(window).load(function() {
-             $('#myGallery').BalancedGallery({autoResize: true,idealHeight: 200, idealWidth: 300, orientation: 'horizontal', padding: 5});
-           });
-         </script>
 
   </body>
 </html>
