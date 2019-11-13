@@ -53,7 +53,7 @@
    height: auto;
    margin: 0 auto;
    display: grid;
-   grid-template-rows: 300px;
+   grid-template-rows: 250px;
    grid-template-columns: 1fr 2fr;
    grid-column-gap: 20px;
 }
@@ -130,7 +130,7 @@
   </section>
 
   <section>
-    <h4 >Margarita cupcakes</h3>
+    <h4>Margarita cupcakes</h4>
         <p id="marg">Ingredients</p>
 
         <ul id="margToggle">
@@ -146,8 +146,9 @@
           <li>Buttermilk: 1/2c</li>
         </ul>
 
-        <p>Directions</p>
-        <ol>
+        <p id="marga">Directions</p>
+
+        <ol id="margaToggle">
           <li>In a large bowl place; flour, baking powder, and salt</li>
           <li>In mixer beat butter and sugar until combined and fluffy</li>
           <li>Add eggs one at a time in the mixer</li>
@@ -213,16 +214,18 @@
 
 <section>
   <h4>Cream of coconut buttercream</h4>
-  <p>Ingredients</p>
-  <ul>
+  <p id="coco">Ingredients</p>
+
+  <ul id="cocoToggle">
     <li>Confectioner sugar: 32oz</li>
     <li>Stick of butter: 4 sticks</li>
     <li>Coconut extract: 2tbsp</li>
     <li>Cream of coconut: 24oz</li>
   </ul>
 
-  <p>Directions</p>
-  <ol>
+  <p id="cream">Directions</p>
+
+  <ol id="creamToggle">
     <li>Whip room temperature butter in mixer until fluffy</li>
     <li>Incorperate powder sugar 1c at a time</li>
     <li>Add cream of coconut</li>
@@ -264,6 +267,12 @@
 
       $("#margToggle").hide();
 
+      $("#margaToggle").hide();
+
+      $("#cocoToggle").hide();
+
+      $("#creamToggle").hide();
+
 
       $("#section1Show").click(function(){
         $("#section1").show();
@@ -275,6 +284,18 @@
 
       $("#marg").click(function(){
         $("#margToggle").slideToggle();
+      });
+
+      $("#marga").click(function(){
+        $("#margaToggle").slideToggle();
+      });
+
+      $("#coco").click(function(){
+        $("#cocoToggle").slideToggle();
+      });
+
+      $("#cream").click(function(){
+        $("#creamToggle").slideToggle();
       });
 
     });
@@ -299,7 +320,7 @@
 
            <script>
            $(window).load(function() {
-             $('#myGallery').BalancedGallery({autoResize: true,idealHeight: 200, idealWidth: 300});
+             $('#myGallery').BalancedGallery({autoResize: true,idealHeight: 200, idealWidth: 300, orientation: 'horizontal', padding: 5});
            });
          </script>
 
