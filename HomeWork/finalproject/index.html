@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Pure essentials</title>
+
+    <style media="screen">
+
+      header{
+        width: 960px;
+        height: auto;
+        background-color: white;
+        margin: 0 auto;
+        padding-bottom: 50px;
+      }
+
+      nav{
+        width: 600px;
+        margin: 0 auto;
+      }
+
+      nav ul li{
+        list-style: none;
+        display:inline-block;
+        margin-right: 15px;
+        padding: 10px;
+        background-color: white;
+      }
+
+      nav ul li a{
+        text-decoration: none;
+        color: Teal;
+        font-size: 15px;
+        padding: 15px;
+      }
+
+      nav ul li a:hover{
+        color: black;
+      }
+
+      header h1{
+        text-align: center;
+      }
+
+      main{
+        background-color: white;
+        width:960px;
+        height:auto;
+        margin: 0 auto;
+      }
+
+#grid1{
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 600px;
+  grid-template-columns: 350px 550px;
+  grid-column-gap: 20px;
+}
+
+#grid1 img{
+  width: 250px;
+}
+
+#grid1 h3{
+  font-family: cursive;
+}
+
+#grid2{
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 100px 300px 300px;
+  grid-template-columns: 700px;
+  }
+
+#grid2 h3{
+  font-family: cursive;
+}
+
+#grid2 img{
+  width: 300px;
+}
+
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <header>
+      <h1>Pure essentials</h1>
+      <nav>
+        <ul>
+          <li><a href="#oils"><strong>Why oils</strong></a></li>
+          <li><a href="#farms"><strong>Farms</strong></a></li>
+          <li><a href="#holiday"><strong>Holiday season</strong></a></li>
+          <li><a href="#treatment"><strong>Treatments</strong></a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+      <section id="grid1">
+        <section>
+        <h3 id="oils">Why oils?</h3>
+        <p>Essential oil are compound extracts from plants, roots, steams, leaves, flowers, and fruits. They are carefully obtained through steam distillation, topically applied, or ingested. Using essential oils can help you maintian your well being as well as being a natural. These oils help maintain your well being as well as even when you are sick, they help eliminate common cold, allergies, baby teething, even toddler tantrums. The oils enter your blood stream when applied topically within 3-5 seconds. They will minimize the medicine that you buy over the counter at your nearest pharmacy. This method of wellness is natural and a healthy way of living. Essential oils by no means are to replace medicine or to be seen by a physicican but think of it as an aid to your health or a vitamin boost to prevent a cold from coming in the first place or having your house chemical free for your new born. </p>
+      </section>
+      <section>
+        <img src="images/citronella" alt="essential oil detail">
+        <img src="images/ginger" alt="essential oil detail">
+        <img src="images/peppermint" alt="essential oil detail">
+        <img src="images/raven" alt="essential oil detail">
+      </section>
+      </section>
+
+      <section id="grid2">
+        <section>
+          <h3 id="farms">Local and global farms</h3>
+        </section>
+
+        <section>
+          <img src="images/utah" alt="Farms">
+          <img src="images/idaho" alt="Farms">
+          <img src="images/muscot" alt="Farms">
+          <img src="images/france" alt="Farms">
+        </section>
+
+      </section>
+
+    </main>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152822362-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-152822362-1');
+    </script>
+  </body>
+</html>
