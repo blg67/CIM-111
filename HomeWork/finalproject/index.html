@@ -5,177 +5,14 @@
     <meta charset="utf-8">
     <title>Pure essentials</title>
 
+    <link rel="stylesheet" href="desktop.css" media="only screen and (min-width:600px)">
+    <link rel="stylesheet" href="mobile.css" media="only screen and (max-width:600px)">
+    <meta name="viewport" content="initial-scale=1">
+
+
     <style media="screen">
 
-      header{
-        width: 960px;
-        height: auto;
-        background-color: white;
-        margin: 0 auto;
-        padding-bottom: 50px;
-      }
 
-      nav{
-        width: 900px;
-        margin: 0 auto;
-      }
-
-      nav ul li{
-        list-style: none;
-        display:inline-block;
-        margin-right: 15px;
-        padding: 10px;
-        background-color: white;
-      }
-
-      nav ul li a{
-        text-decoration: none;
-        color: Teal;
-        font-size: 15px;
-        padding: 15px;
-      }
-
-      nav ul li a:hover{
-        color: black;
-      }
-
-      header h1{
-        text-align: center;
-      }
-
-      main{
-        background-color: white;
-        width:960px;
-        height:auto;
-        margin: 0 auto;
-      }
-
-#grid1{
-  width: 900px;
-  height: auto;
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: 650px;
-  grid-template-columns: 350px 550px;
-  grid-column-gap: 20px;
-}
-
-#grid1 img{
-  width: 250px;
-}
-
-#grid1 h3{
-  font-family: cursive;
-}
-
-#grid2{
-  width: 900px;
-  height: auto;
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: 50px 300px 350px;
-  grid-template-columns: 700px 200px;
-  padding-bottom: 30px;
-  }
-
-#grid2 h3{
-  font-family: cursive;
-}
-
-#grid2 img{
-  width: 250px;
-}
-
-#grid3{
-  width: 900px;
-  height: auto;
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: 200px 350px 350px;
-  grid-template-columns:1fr 1fr;
-  grid-column-gap: 10px;
-  grid-column-gap: 60px;
-
-}
-
-#grid3 h3{
-  font-family: cursive;
-}
-
-#grid3 img{
-  width: 150px;
-}
-
-#grid4{
-  width: 900px;
-  height: auto;
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: 200px 350px 50px;
-  grid-template-columns:900px;
-
-
-
-}
-
-#grid4 h3{
-  font-family: cursive;
-}
-
-#grid4 img{
-  width: 220px;
-}
-
-#grid5{
-  width: 900px;
-  height: auto;
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: 400px 400px;
-  grid-template-columns:300px 300px;
-
-}
-
-#grid5 h3{
-  font-family: cursive;
-  font-size: 20px;
-}
-
-#grid5 img{
-  width: 280px;
-  padding-left: 200px;
-}
-
-#grid5 h5{
-  font-family: serif;
-  color: teal;
-  font-size: 15px;
-}
-
-#grid5 p{
-  font-family: serif;
-}
-
-
-#grid6{
-  width: 900px;
-  height: auto;
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: 400px 400px;
-  grid-template-columns:400px 400px;
-  grid-column-gap: 60px;
-
-}
-
-#grid6 h3{
-  font-family: cursive;
-}
-
-#grid6 img{
-  width: 280px;
-
-}
     </style>
 
   </head>
@@ -185,7 +22,7 @@
 
     <header>
       <h1>Pure essentials</h1>
-      <nav>
+      <nav class="navbar">
         <ul>
           <li><a href="#oils"><strong>Why oils</strong></a></li>
           <li><a href="#farms"><strong>Farms</strong></a></li>
@@ -202,7 +39,7 @@
       <section id="grid1">
         <section>
         <h3 id="oils">Why oils?</h3>
-        <p>Essential oil are compound extracts from plants, roots, steams, leaves, flowers, and fruits. They are carefully obtained through steam distillation, topically applied, or ingested. Using essential oils can help you maintian your well being as well as being a natural. These oils help maintain your well being as well as even when you are sick, they help eliminate common cold, allergies, baby teething, even toddler tantrums. The oils enter your blood stream when applied topically within 3-5 seconds. They will minimize the medicine that you buy over the counter at your nearest pharmacy. This method of wellness is natural and a healthy way of living. Essential oils by no means are to replace medicine or to be seen by a physicican but think of it as an aid to your health or a vitamin boost to prevent a cold from coming in the first place or having your house chemical free for your new born. </p>
+        <p>Essential oil are compound extracts from plants, roots, steams, leaves, flowers, and fruits. They are carefully obtained through steam distillation, topically applied, or ingested. Using essential oils can help you maintian your well being as well as being a natural. These oils help maintain your well being as well as even when you are sick, they help eliminate common cold, allergies, baby teething, even toddler tantrums. The oils enter your blood stream when applied topically within 3-5 seconds. They will minimize the medicine that you buy over the counter. This method of wellness is natural and a healthy way of living. Essential oils by no means are to replace medicine or to be seen by a physicican but think of it as an aid to your health or a vitamin boost to prevent a cold from coming in the first place or having your house chemical free for your new born. </p>
       </section>
       <section>
         <img src="images/citronella.png" alt="essential oil detail">
@@ -244,19 +81,23 @@
 
         <section>
           <img src="images/christmas.png" alt="Essence of the season">
+          <h6>Christmas spirit oil set</h6>
           <p>Essence of the Season™ lifts spirits with festive, seasonal scents. Containing Christmas Spirit oil blend and the biblical oils and gum resins of Frankincense and Myrrh, this collection can be used during the holidays or year-round to invoke memories or enhance spiritual awareness.</p>
           <!-- Youngliving.com -->
           <img src="images/lotion.png" alt="Lotion set">
+          <h6>Moisturizer</h6>
           <p>Soft skin is in! Give dry skin the brush-off by exfoliating with Young Living’s Pink Himalayan Sea Salt Scrub, infused with the comforting scent of Vanillamint. Follow by applying Young Living’s original Vanillamint Body Butter for soft, smooth, and sweetly scented skin. This is a limited-time offering, so stock up for go-to gifts—and for yourself! The Very Merry Vanillamint Collection is made from 100 percent plant-based ingredients and formulated without parabens, phthalates, petrochemicals, synthetic preservatives, synthetic fragrances, and synthetic dyes and colorants.</p>
           <!-- youngliving.com -->
         </section>
 
         <section>
           <img src="images/chapstick.png" alt="christmas set">
+          <h6>Christmas chapstick</h6>
           <p>Some days you want a citrus kiss, other days you’re searching for a minty moisturizer. With four different choices, you can mix it up! Add Young Living essential oil-infused lip balms to presents, party favors, and gift baskets, or keep this lip balm set for yourself and stash one in your car, your bag, your bedside table, or your bathroom. Set includes a reusable metal tin.</p>
           <!-- youngliving.com -->
 
           <img src="images/lights.png" alt="Northern lights set">
+          <h6>Gift calender</h6>
           <p>If you thought counting down to a holiday or special event couldn’t get more exciting, think again. Countdown in style with our Northern Lights-decorated Holiday Calendar filled with signature Young Living products and accessories. Each of the 12 drawers reveals a best-selling product surprise to keep you feeling festive all year long. Treat yourself with the ultimate gift or give this perfect gift to a loved one.</p>
           <!-- youngliving.com -->
         </section>
@@ -330,17 +171,20 @@
 
         <section>
           <img src="images/fruits.png" alt="fruit cleaner">
+          <h6>Fruit wash</h6>
           <p>Enjoy eating your fruits and vegetables as nature intended with Thieves Fruit & Veggie Soak! This unique formula combines three exclusive Young Living essential oil blends with other naturally derived ingredients to effectively wash your produce. It’s highly concentrated for long-lasting use.</p>
         </section>
 
         <section>
           <img src="images/laundry.png" alt="laundry">
+          <h6>Laundry soap</h6>
           <p>Send your worries down the drain with Thieves Laundry Soap! With a formula that effectively and gently cleans clothing, Thieves Laundry Soap is made of plant-based ingredients and leaves no chemical or synthetic residue. Natural enzymes and cleaning agents, alongside powerful essential oils, leave your clothes fresh and clean with a light citrus scent that everyone in the family will love. Not only does it clean well, but a little goes a long way!</p>
           <!-- youngliving.com -->
         </section>
 
         <section>
           <img src="images/dish.png" alt="dish soap">
+          <h6>Dish soup</h6>
           <p>Send your worries down the drain with Thieves Laundry Soap! With a formula that effectively and gently cleans clothing, Thieves Laundry Soap is made of plant-based ingredients and leaves no chemical or synthetic residue. Natural enzymes and cleaning agents, alongside powerful essential oils, leave your clothes fresh and clean with a light citrus scent that everyone in the family will love.</p>
           <!-- youngliving.com -->
         </section>
@@ -374,6 +218,18 @@
       });
 
       </script>
+
+      <script src="js/stickUp.min.js"></script>
+      <script type="text/javascript">
+                   //initiating jQuery
+                   jQuery(function($) {
+                     $(document).ready( function() {
+                       //enabling stickUp on the '.navbar-wrapper' class
+                       $('.navbar').stickUp();
+                     });
+                   });
+
+                 </script>
 
 
 

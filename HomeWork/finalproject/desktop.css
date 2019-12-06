@@ -1,0 +1,171 @@
+header{
+  width: 960px;
+  height: auto;
+  background-color: white;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+nav{
+  width: 900px;
+  margin: 0 auto;
+}
+
+nav ul li{
+  list-style: none;
+  display:inline-block;
+  margin-right: 15px;
+  padding: 10px;
+  background-color: white;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: Teal;
+  font-size: 15px;
+  padding: 15px;
+}
+
+nav ul li a:hover{
+  color: black;
+}
+
+header h1{
+  text-align: center;
+}
+
+main{
+  background-color: white;
+  width:960px;
+  height:auto;
+  margin: 0 auto;
+}
+
+#grid1{
+width: 900px;
+height: auto;
+margin: 0 auto;
+display: grid;
+grid-template-rows: 650px;
+grid-template-columns: 350px 550px;
+grid-column-gap: 20px;
+}
+
+#grid1 img{
+width: 250px;
+}
+
+#grid1 h3{
+font-family: cursive;
+}
+
+#grid2{
+width: 900px;
+height: auto;
+margin: 0 auto;
+display: grid;
+grid-template-rows: 50px 300px 350px;
+grid-template-columns: 700px 200px;
+padding-bottom: 30px;
+}
+
+#grid2 h3{
+font-family: cursive;
+}
+
+#grid2 img{
+width: 250px;
+}
+
+#grid3{
+width: 900px;
+height: auto;
+margin: 0 auto;
+display: grid;
+grid-template-rows: 200px 350px 350px;
+grid-template-columns:1fr 1fr;
+grid-column-gap: 10px;
+grid-column-gap: 60px;
+
+}
+
+#grid3 h3{
+font-family: cursive;
+}
+
+#grid3 img{
+width: 150px;
+display:block;
+}
+
+#grid4{
+width: 900px;
+height: auto;
+margin: 0 auto;
+display: grid;
+grid-template-rows: 200px 350px 50px;
+grid-template-columns:900px;
+
+
+
+}
+
+#grid4 h3{
+font-family: cursive;
+}
+
+#grid4 img{
+width: 220px;
+}
+
+#grid5{
+width: 900px;
+height: auto;
+margin: 0 auto;
+display: grid;
+grid-template-rows: 400px 400px;
+grid-template-columns:300px 300px;
+
+}
+
+#grid5 h3{
+font-family: cursive;
+font-size: 20px;
+}
+
+#grid5 img{
+width: 280px;
+padding-left: 200px;
+}
+
+#grid5 h5{
+font-family: serif;
+color: teal;
+font-size: 15px;
+}
+
+#grid5 p{
+font-family: serif;
+}
+
+
+#grid6{
+width: 900px;
+height: auto;
+margin: 0 auto;
+display: grid;
+grid-template-rows: 450px 450px;
+grid-template-columns:400px 400px;
+grid-column-gap: 60px;
+
+}
+
+#grid6 h3{
+font-family: cursive;
+}
+
+#grid6 img{
+width: 280px;
+display: block;
+
+}
